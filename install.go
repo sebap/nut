@@ -40,12 +40,6 @@ func runInstall(c *cli.Context) {
 	pkgs, err := pl.Load(importPaths...)
 	check(err)
 
-	//p, err := NewProject()
-	//check(err)
-
-	//err = rewrite(pkgs, p.ImportPath)
-	//check(err)
-
 	err = os.RemoveAll(setting.VendorDir())
 	check(err)
 
