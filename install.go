@@ -43,8 +43,8 @@ func runInstall(c *cli.Context) {
 	p, err := NewProject()
 	check(err)
 
-	err = rewrite(pkgs, p.ImportPath)
-	check(err)
+	//err = rewrite(pkgs, p.ImportPath)
+	//check(err)
 
 	err = os.RemoveAll(setting.VendorDir())
 	check(err)
